@@ -1,0 +1,18 @@
+# Скомпилированные файлы
+[Bb]in/
+[Oo]bj/
+*.pdb
+
+# Зависимости
+packages/
+*.nupkg
+
+# Настройки IDE
+.vs/
+.vscode/
+*.user
+*.suo
+
+# Файлы ОС
+.DS_Store
+Thumbs.db
