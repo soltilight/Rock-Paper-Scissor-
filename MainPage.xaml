@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Rock_Paper_Scissor.MainPage"
+             NavigationPage.HasNavigationBar="False"
+             Background="White">
+
+    <Grid RowDefinitions="*,*,*"
+      ColumnDefinitions="*,*,*">
+
+        <Label Grid.Row="0"
+           Grid.Column="0"
+            
+           Grid.ColumnSpan="3"
+           Text="Rock,Paper,Scissor Hunger games&#10;you lose and you consciousness will be captured by Ai"
+             FontFamily="BLOODY"
+           TextColor="Red"
+           VerticalOptions="Start"
+           HorizontalOptions="Center"
+           HorizontalTextAlignment="Center"
+           FontSize="32"
+           FontAttributes="Bold" />
+        <Image Source="vs_picture.png"
+               Grid.Row="1"
+               Grid.Column="1"
+               />
+        <Image Source="human.png"
+            x:Name="Player"
+               Grid.Row="1"
+               Grid.Column="0"
+               />
+        <Image x:Name="AI"
+                Source="robot.png"
+        Grid.Row="1"
+        Grid.Column="2"
+        />
+        <Button Text="Battle Start!"
+           BackgroundColor="White"
+                  FontFamily="BLOODY"
+                 Clicked="OnBattleButtonClicked"
+TextColor="Red"
+           Grid.Row="2"
+           Grid.Column="1"
+            FontSize="32"/>
+        <Picker Title="Choose your weapon!"
+           x:Name="PlayerPicker"
+        FontFamily="BLOODY"
+        TextColor="Red"
+        Grid.Row="2"
+        Grid.Column="0"
+        HorizontalOptions="Center"
+        VerticalOptions="Center"
+        SelectedIndex="0"
+        WidthRequest="180"
+        HeightRequest="50">
+            <Picker.Items>
+                <x:String>🗿 Камень</x:String>
+                <x:String>📄 Бумага</x:String>
+                <x:String>✂️ Ножницы</x:String>
+            </Picker.Items>
+        </Picker>
+
+    </Grid>
+</ContentPage>
